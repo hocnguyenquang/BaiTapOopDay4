@@ -12,10 +12,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		LogicServiceInterface logicService = new LogicService();
-		System.out.println("Nhập công việc: ");
-		List<Worker> cv = logicService.insert(sc);
+		LogicServiceInterface logicService = new LogicService(); //Interface k thể khởi tạo đối tượng
+		System.out.println("----------Programming Worker----------");
+		List<Worker> cv = logicService.insert(sc); //insert là với giá trị trả về là list worker
 		logicService.show(cv);
 	}
 
 }
+
